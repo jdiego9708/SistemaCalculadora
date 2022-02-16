@@ -22,6 +22,13 @@ namespace SISCalculadora
             this.btnDividir.Click += BtnDividir_Click;
         }
 
+
+
+        private void AbrirConexionBD()
+        {
+
+        }
+
         private void BtnDividir_Click(object sender, EventArgs e)
         {
             try
@@ -83,7 +90,7 @@ namespace SISCalculadora
 
                 int resultado = numero1 + numero2;
 
-                this.lblResultado.Text = $"Resultado = {resultado}";
+                this.lblResultado.Text = $"Resultado = {resultado} {Environment.NewLine}";
             }
             catch (Exception ex)
             {
